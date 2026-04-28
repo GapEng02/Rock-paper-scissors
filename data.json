@@ -1,0 +1,22 @@
+{
+    "game": {
+        "name": "Rock Paper Scissors",
+        "version": "1.0"
+    },
+    "moves": ["rock", "paper", "scissors"],
+    "images": {
+        "rock": "https://zachtsch.github.io/rpsimages/rock.png",
+        "paper": "https://zachtsch.github.io/rpsimages/paper.png",
+        "scissors": "https://zachtsch.github.io/rpsimages/scissors.png"
+    },
+    "rules": {
+        "rock": { "beats": "scissors", "losesTo": "paper" },
+        "paper": { "beats": "rock", "losesTo": "scissors" },
+        "scissors": { "beats": "paper", "losesTo": "rock" }
+    },
+    "messages": {
+        "win": "🎉 YOU WIN! {player} beats {computer}. 🎉",
+        "lose": "💀 YOU LOSE! {computer} beats {player}. 💀",
+        "draw": "🤝 DRAW! Both chose {move}. 🤝"
+    }
+}

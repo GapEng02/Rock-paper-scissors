@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors · TypeScript Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>✧ ROCK · PAPER · SCISSORS ✧</h1>
+            <div class="sub">TypeScript + JSON powered</div>
+        </div>
+
+        <!-- ARENA -->
+        <div class="arena">
+            <div class="fighter">
+                <h3>👤 YOU</h3>
+                <div class="image-area">
+                    <img id="playerImg" src="" alt="Your choice" width="160" height="160">
+                </div>
+                <div class="choice-label" id="playerChoiceLabel">—</div>
+            </div>
+
+            <div class="fighter">
+                <h3>🤖 AI</h3>
+                <div class="image-area">
+                    <img id="computerImg" src="" alt="Computer choice" width="160" height="160">
+                </div>
+                <div class="choice-label" id="computerChoiceLabel">—</div>
+            </div>
+        </div>
+
+        <div class="result-area" id="resultMessage">
+            🎮 Loaded! Make your move
+        </div>
+
+        <!-- SCOREBOARD -->
+        <div class="scoreboard">
+            <div class="score-card">
+                <div class="score-label">🏆 WINS</div>
+                <div class="score-value" id="winsCount">0</div>
+            </div>
+            <div class="score-card">
+                <div class="score-label">🤝 DRAWS</div>
+                <div class="score-value" id="drawsCount">0</div>
+            </div>
+            <div class="score-card">
+                <div class="score-label">💔 LOSSES</div>
+                <div class="score-value" id="lossesCount">0</div>
+            </div>
+            <div class="winrate">
+                <span>📊 WIN%</span>
+                <span id="winPercent">N/A</span>
+            </div>
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="actions">
+            <button class="rps-btn" data-move="rock">🪨 ROCK</button>
+            <button class="rps-btn" data-move="paper">📄 PAPER</button>
+            <button class="rps-btn" data-move="scissors">✂️ SCISSORS</button>
+            <button class="rps-btn reset-btn" id="resetBtn">🔄 RESET</button>
+        </div>
+        <footer>⚡ Data loaded from JSON · TypeScript logic</footer>
+    </div>
+
+    <script type="module" src="script.js"></script>
+    <!-- Note: script.js is compiled from script.ts -->
+</body>
+</html>
